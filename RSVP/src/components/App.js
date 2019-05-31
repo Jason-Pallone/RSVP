@@ -111,9 +111,9 @@ showInviteFriendsMessage=()=>{
       pendingGuest={this.state.pendingGuest}
       />
 
-    <h2 className='intro-message'>Invite some friends and family! Confirm your guests,
+    <p className='intro-message'>Invite some friends and family! Confirm your guests,
      change their names if needed, remove the guest or filter through your guest who
-     have/have not confirmed. Get started above!</h2>
+     have/have not confirmed. Get started above!</p>
 
       <PendingGuestLi
         pendingGuest={this.state.pendingGuest} />
@@ -122,18 +122,19 @@ showInviteFriendsMessage=()=>{
   )}else{
     return(    <div className="App">
     <Header />
-    <div>
-    <label className='filter-guests-label'>Hide all unconfirmed guest
-      <input type='checkbox' className='filter-guests-checkbox'
-       value={this.state.filterUnconfirmedGuest} onChange={this.toggleFilterUnconfirmedGuest} />
-    </label>
-    </div>
     <AddGuest
     guest={this.state.guest}
     addGuest={this.addGuest}
     updatePendingGuestValue={this.updatePendingGuestValue}
     pendingGuest={this.state.pendingGuest}
     />
+
+    <div className='filter-checkbox-container'>
+      <label className='filter-guests-label'>Hide all unconfirmed guest
+        <input type='checkbox' className='filter-guests-checkbox'
+        value={this.state.filterUnconfirmedGuest} onChange={this.toggleFilterUnconfirmedGuest} />
+      </label>
+    </div>
 
     <GuestList
       guest={this.state.guest}
