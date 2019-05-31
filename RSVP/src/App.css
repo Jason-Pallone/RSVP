@@ -26,7 +26,7 @@ h1 {
 
 
 li{
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 30px;
   border-style: solid;
   border-width: 1px;
@@ -37,6 +37,8 @@ li{
   height: 126px;
   text-align: center;
   list-style: none;
+  background: blue;
+  color: white
 }
 
 
@@ -49,7 +51,7 @@ li{
 
 /*
 =======================================
-      AddGuest input and buttons
+      AddGuest input 
 ======================================
 */
 
@@ -66,6 +68,48 @@ li{
   margin-top: 10px;
 }
 
+
+
+
+ /*--------------------------------------------------------*/
+
+/*
+=======================================
+      checkboxes
+===================================
+*/
+.filter-guests-checkbox{
+  margin-left: 15px
+}
+
+.filter-guests-label{
+  font-family: 'quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  position: relative;
+  top: 30px;
+  left:80px;
+  font-size: 1.5rem
+}
+
+.guestCheckboxLabel{
+  font-family: 'quicksand';
+  font-size: .8rem;
+  margin-top: 0px;
+  margin-right: 50px;
+}
+.guestCheckbox{
+  margin-top:10px;
+  margin-right: 120px;
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+/*
+=========================================
+        Buttons 
+=========================================
+*/
+
 .add-guest-button{
   font-family: 'quicksand';
    letter-spacing: 1px;
@@ -73,7 +117,7 @@ li{
    opacity: .8;
    display:inline-block;
    cursor:pointer;
-   color: black;
+   color: white;
    font-size: 1rem;
    font-weight:bolder;
    padding:10px 25px;
@@ -86,39 +130,6 @@ li{
  }
 
 
-
- /*--------------------------------------------------------*/
-
-/*
-=======================================
-      checkboxes
-===================================
-*/
-
-
-.guestCheckboxLabel{
-  position: relative;
-  font-size: 12px;
-  top:35px;
-  right: 70px;
-}
-
-
-.guestCheckbox{
-  position: relative;
-  top:2px;
-  right: 85px
-}
-
-
-
-/*-------------------------------------------------------------------------*/
-/*
-=========================================
-        Buttons for guest <li>
-=========================================
-*/
-
 .edit-button,
 .remove-button{
   font-family: 'quicksand';
@@ -127,7 +138,7 @@ li{
   opacity: .8;
   display:inline-block;
   cursor:pointer;
-  color: black;
+  color: white;
   font-size: 1rem;
   font-weight:bolder;
   padding: 5px;
@@ -140,31 +151,16 @@ li{
 
 .edit-button{
   margin-right: 150px;
-  margin-top: 50px
+  margin-top: 15px;
+  padding-left: 8%;
+  padding-right: 8%
 }
 
 .remove-button{
   position: fixed;
-  margin-bottom: 100px;
-  margin-left: -140px
+  margin-bottom: 107px;
+  margin-left: -90px
 
 }
 
-/*
-.remove-button{
-  position: relative;
-  margin-bottom: 30px;
-  margin-right: 1rem
-}
 
-.edit-button{
-  position: relative;
-  margin-top: 50px;
-  margin-right: 90px
-}*/
-
-li input[type='text'] .remove-button{
-  border-radius: 100px;
-  margin-bottom: -30px;
-  margin-left: 100px
-}

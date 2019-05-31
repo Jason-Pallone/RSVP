@@ -109,9 +109,12 @@ toggleFilterUnconfirmedGuest=()=>
 
     <div className="App">
       <Header />
-      <label>Hide all unconfirmed guest
-      <input type='checkbox' value={this.state.filterUnconfirmedGuest} onChange={this.toggleFilterUnconfirmedGuest} />
+      <div>
+      <label className='filter-guests-label'>Hide all unconfirmed guest
+        <input type='checkbox' className='filter-guests-checkbox'
+         value={this.state.filterUnconfirmedGuest} onChange={this.toggleFilterUnconfirmedGuest} />
       </label>
+      </div>
       <AddGuest
       guest={this.state.guest}
       addGuest={this.addGuest}

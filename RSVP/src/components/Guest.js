@@ -8,11 +8,11 @@ const Guest = (props)=>
             editGuest={props.editGuest}
             name={props.name}
         />
-            
-        <label className='guestCheckboxLabel'> Confirmed
-        <input className='guestCheckbox' type='checkbox' value={props.isConfirmed}/>
-        </label>
-    
+        <div >
+            <label className='guestCheckboxLabel'> Confirmed
+                <input className='guestCheckbox' type='checkbox' value={props.isConfirmed}/>
+            </label>
+        </div>  
         <button className='edit-button' onClick={props.toggleEditGuest}>{props.isEditing ? 'save':'edit'}</button>
         <button className='remove-button' onClick={props.removeGuest}>Remove</button>
     </li>
