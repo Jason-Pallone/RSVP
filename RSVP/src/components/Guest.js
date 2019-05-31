@@ -2,12 +2,13 @@ import React from 'react'
 import GuestName from './GuestName'
 
 const Guest = (props)=>
-    <li>
-        <GuestName 
-            guestName={props.guestName}
+    <li key={props.key}>
+        <GuestName
             isEditing={props.isEditing} 
             editGuest={props.editGuest}
-            />
+            name={props.name}
+        />
+            
         <label className='guestCheckboxLabel'> Confirmed
         <input className='guestCheckbox' type='checkbox' value={props.isConfirmed}/>
         </label>

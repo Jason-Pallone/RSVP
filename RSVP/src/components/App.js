@@ -31,7 +31,7 @@ class App extends Component {
     const id = this.newGuestId()
     this.setState({
       guest: [{
-        guestName: this.state.pendingGuest,
+        name: this.state.pendingGuest,
         isConfirmed: false,
         isEditing: false,
         id
@@ -49,13 +49,13 @@ class App extends Component {
     })
   }
 
-  editGuest=(id, name)=>{
+  editGuest=(name, id)=>{
     this.setState({
       guest: this.state.guest.map((guest) =>{
         if(id===guest.id){
           return{
             ...guest,
-            name
+           name
           }}
           return guest
       })

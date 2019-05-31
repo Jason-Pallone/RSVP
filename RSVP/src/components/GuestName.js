@@ -3,12 +3,13 @@ import React from 'react';
 const GuestName =(props)=>{
     if(props.isEditing){
         return(
-        <input type='text' value={props.guestName} onChange={e => props.editGuest(e.target.value)}/>
+        <input type='text' className='edit-guest-input'
+         value={props.name} onChange={e => props.editGuest(e.target.value)}/>
         )
     }
 
     return (
-    <span>{props.guestName}</span>
+    <span>{props.name}</span>
     )
 }
 

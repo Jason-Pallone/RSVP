@@ -11,12 +11,12 @@ const GuestList =(props)=>
             {props.guest.filter( guest => !props.filterUnconfirmedGuest || guest.isConfirmed)
             .map((guest, index) =>   <Guest 
                             key={index}
-                            guestName={guest.guestName}
+                            name={guest.name}
                             toggleGuestConfirmed={props.toggleGuestConfirmed}
                             isConfirmed={guest.isConfirmed}
                             toggleEditGuest={()=> props.toggleEditGuest(guest.id)}
                             isEditing={guest.isEditing}
-                            editGuest={(editedName)=>props.editGuest(editedName, guest.id)}
+                            editGuest={name=> props.editGuest(name, guest.id)}
                             removeGuest={()=> props.removeGuest(guest.id)}
                                 />)}
        </ul>
