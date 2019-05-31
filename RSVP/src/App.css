@@ -15,8 +15,14 @@ h1 {
 }
 
 
+/*
+============================
+        HEADER
+==========================
+*/
+
 .header-div{
-  background: radial-gradient(circle at top right, red, blue, red);
+  background:radial-gradient(circle at top right, red, blue, red);
   padding:2%;
   padding-bottom: 7%;
   border-radius: 10px;
@@ -25,6 +31,31 @@ h1 {
 
 
 }
+
+/*
+===============================
+      INTRO MESSAGE
+==============================
+*/
+
+.intro-message{
+  font-family: 'quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  margin-top: 70px;
+  background: blue;
+  box-shadow: 3px 3px 10px 1px inset white,
+              -3px -3px 10px 1px inset white;
+  color:white;
+  border-radius: 10px;
+  padding:35px;
+}
+
+
+/*
+==============================
+        LI ELEMENTS
+==============================
+*/
 
 
 li{
@@ -44,6 +75,10 @@ li{
   float: left;
   margin-top: 120px;
   margin-left: 2rem;
+}
+
+.pending-guest-li{
+  margin-top: -10px
 }
 
 

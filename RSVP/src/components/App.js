@@ -88,38 +88,22 @@ toggleGuestConfirmed=(id)=>{
 }
 
 
-totalInvited=()=>
-  this.state.guest.length
-
-
-
-totalNotconfirmed=()=>
-  this.state.guest.length - this.state.guest.isConfirmed.length
-
-
-
-totalConfirmed=()=>{
-  this.state.guest.reduce((total, guest)=> guest.isConfirmed ? total +=1 : total, 0)
+showInviteFriendsMessage=()=>{
+  
 }
 
-
-toggleFilterUnconfirmedGuest=()=>
-  this.setState({
-    filterUnconfirmedGuest: !this.state.filterUnconfirmedGuest
-  })
-
-
   render(){
-  return (
+
+    {/* checks to see if the first li has been created, if not created shows the intro message and doesn't 
+    dispaly the filter checkbox, else if first li is created, hides intro message and shows filter checkbox
+     */}
+    const guests = this.state.guest
+
+    if(guests.length < 1){
+      return(
 
     <div className="App">
       <Header />
-      <div>
-      <label className='filter-guests-label'>Hide all unconfirmed guest
-        <input type='checkbox' className='filter-guests-checkbox'
-         value={this.state.filterUnconfirmedGuest} onChange={this.toggleFilterUnconfirmedGuest} />
-      </label>
-      </div>
       <AddGuest
       guest={this.state.guest}
       addGuest={this.addGuest}
@@ -127,19 +111,44 @@ toggleFilterUnconfirmedGuest=()=>
       pendingGuest={this.state.pendingGuest}
       />
 
-      <GuestList
-        guest={this.state.guest}
-        toggleGuestConfirmed={this.toggleGuestConfirmed}
-        toggleEditGuest={this.toggleEditGuest}
-        editGuest={this.editGuest}
-        removeGuest={this.removeGuest}
-        filterUnconfirmedGuest={this.state.filterUnconfirmedGuest}
-         />
+    <h2 className='intro-message'>Invite some friends and family! Confirm your guests,
+     change their names if needed, remove the guest or filter through your guest who
+     have/have not confirmed. Get started above!</h2>
+
       <PendingGuestLi
         pendingGuest={this.state.pendingGuest} />
     </div>
 
-  )}
+  )}else{
+    return(    <div className="App">
+    <Header />
+    <div>
+    <label className='filter-guests-label'>Hide all unconfirmed guest
+      <input type='checkbox' className='filter-guests-checkbox'
+       value={this.state.filterUnconfirmedGuest} onChange={this.toggleFilterUnconfirmedGuest} />
+    </label>
+    </div>
+    <AddGuest
+    guest={this.state.guest}
+    addGuest={this.addGuest}
+    updatePendingGuestValue={this.updatePendingGuestValue}
+    pendingGuest={this.state.pendingGuest}
+    />
+
+    <GuestList
+      guest={this.state.guest}
+      toggleGuestConfirmed={this.toggleGuestConfirmed}
+      toggleEditGuest={this.toggleEditGuest}
+      editGuest={this.editGuest}
+      removeGuest={this.removeGuest}
+      filterUnconfirmedGuest={this.state.filterUnconfirmedGuest}
+       />
+    <PendingGuestLi
+      pendingGuest={this.state.pendingGuest} />
+  </div>
+    )
+  }
+  }
 }
 
 export default App;
