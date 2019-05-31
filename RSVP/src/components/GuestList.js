@@ -12,7 +12,7 @@ const GuestList =(props)=>
             .map((guest, index) =>   <Guest 
                             key={index}
                             name={guest.name}
-                            toggleGuestConfirmed={props.toggleGuestConfirmed}
+                            toggleGuestConfirmed={()=> props.toggleGuestConfirmed(guest.id)}
                             isConfirmed={guest.isConfirmed}
                             toggleEditGuest={()=> props.toggleEditGuest(guest.id)}
                             isEditing={guest.isEditing}

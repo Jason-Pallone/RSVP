@@ -82,21 +82,26 @@ toggleEditGuest=(id)=>{
   this.toggleGuestProperty('isEditing', id)
 }
 
+
 toggleGuestConfirmed=(id)=>{
   this.toggleGuestProperty('isConfirmed', id)
 }
 
+
 totalInvited=()=>
   this.state.guest.length
+
 
 
 totalNotconfirmed=()=>
   this.state.guest.length - this.state.guest.isConfirmed.length
 
 
+
 totalConfirmed=()=>{
   this.state.guest.reduce((total, guest)=> guest.isConfirmed ? total +=1 : total, 0)
 }
+
 
 toggleFilterUnconfirmedGuest=()=>
   this.setState({

@@ -10,10 +10,12 @@ const Guest = (props)=>
         />
         <div >
             <label className='guestCheckboxLabel'> Confirmed
-                <input className='guestCheckbox' type='checkbox' value={props.isConfirmed}/>
+                <input className='guestCheckbox' type='checkbox' 
+                value={props.isConfirmed} onChange={props.toggleGuestConfirmed}
+                />
             </label>
         </div>  
-        <button className='edit-button' onClick={props.toggleEditGuest}>{props.isEditing ? 'save':'edit'}</button>
+        <button className='edit-button' onClick={props.toggleEditGuest}>{props.isEditing ? 'Save':'Edit'}</button>
         <button className='remove-button' onClick={props.removeGuest}>Remove</button>
     </li>
 
