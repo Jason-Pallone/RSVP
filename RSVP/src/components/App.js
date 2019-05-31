@@ -87,9 +87,10 @@ toggleGuestConfirmed=(id)=>{
   this.toggleGuestProperty('isConfirmed', id)
 }
 
-
-showInviteFriendsMessage=()=>{
-  
+toggleFilterUnconfirmedGuest=()=>{
+  this.setState({
+    filterUnconfirmedGuest: !this.state.filterUnconfirmedGuest
+  })
 }
 
   render(){
