@@ -1,0 +1,148 @@
+body{
+  font-family: 'quicksand', Georgia, 'Times New Roman', Times, serif
+}
+
+@font-face{
+  font-family: 'quicksand';
+  src: url(./fonts/quicksand/Quicksand-Regular.otf) format('opentype');
+}
+
+h1 {
+  font-family: 'quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: white
+}
+/*radial-gradient(circle at top left, orange, blue, aqua);*/
+.header-div{
+  background: radial-gradient(circle at top right, red, blue, red);
+  padding:2%;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px 1px inset white,
+              -3px -3px 10px 1px inset white
+
+
+}
+
+
+li{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  border-color: grey;
+  box-shadow: 10px 10px 10px black;
+  width: 20%;
+  height: 126px;
+  text-align: center;
+  list-style: none;
+}
+
+
+
+/*
+========================
+      Class selectors
+========================
+*/
+
+/*
+=======================================
+      AddGuest input and buttons
+======================================
+*/
+
+.invite-guest-input {
+  position: relative;
+  left: 500px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  width: 25%;
+  height: 30px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.add-guest-button{
+  font-family: 'quicksand';
+   letter-spacing: 1px;
+   background-color: rgb(0, 102, 255);
+   opacity: .8;
+   display:inline-block;
+   cursor:pointer;
+   color: black;
+   font-size: 1rem;
+   font-weight:bolder;
+   padding:10px 25px;
+   text-decoration:none;
+   text-shadow:0px 1px 0px #3d768a;
+   border-radius: 10px;
+   position: relative;
+   left:500px;
+   bottom:2px;
+ }
+
+
+
+ /*--------------------------------------------------------*/
+
+/*
+=======================================
+      checkboxes
+===================================
+*/
+
+
+.guestCheckboxLabel{
+  position: relative;
+  font-size: 12px;
+  top:35px;
+  right: 70px;
+}
+
+
+.guestCheckbox{
+  position: relative;
+  top:2px;
+  right: 85px
+}
+
+
+
+/*-------------------------------------------------------------------------*/
+/*
+=========================================
+        Buttons for guest <li>
+=========================================
+*/
+
+.edit-button,
+.remove-button{
+  font-family: 'quicksand';
+  letter-spacing: 1px;
+  background-color: rgb(0, 102, 255);
+  opacity: .8;
+  display:inline-block;
+  cursor:pointer;
+  color: black;
+  font-size: 1rem;
+  font-weight:bolder;
+  padding: 5px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+  border-radius: 10px;
+  bottom:2px;
+}
+
+.remove-button{
+  position: relative;
+  right:85px;
+  top:40px
+}
+.edit-button{
+  position: relative;
+  top: 78px;
+  right:90px
+}
