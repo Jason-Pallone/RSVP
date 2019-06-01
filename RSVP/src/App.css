@@ -190,6 +190,11 @@ li{
     width:100%
   }
 
+  .add-guest-button{
+    margin-left:110px;
+    margin-top:10px;
+  }
+
   /* 
   =========================
         guest filter
@@ -211,11 +216,6 @@ li{
   .guest-checkbox-container{
     margin-top: 15px;
     font-size: 1.2rem
-  }
-
-  .add-guest-button{
-    margin-left:110px;
-    margin-top:10px;
   }
 
   .pending-guest-li{
@@ -260,5 +260,24 @@ li{
     width: 80%;
     border-radius: 3px;
     font-family: 'quicksand'
+  }
+}
+
+
+
+/*
+==========================
+      mobile small
+==========================
+*/
+
+@media(max-width:400px){
+  .invite-guest-input{
+    width:100%;
+    font-size: 14px;
+  }
+
+  .add-guest-button{
+    margin-left: 86px;
   }
 }
