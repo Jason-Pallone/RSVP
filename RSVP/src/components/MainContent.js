@@ -29,16 +29,17 @@ const MainContent=(props)=>{
        <PendingGuestLi
          pendingGuest={props.pendingGuest} />
      </div>
- 
-   )}else{
-     return(    <div className="App">
-     <Header />
-     <AddGuest
-     guest={props.guest}
-     addGuest={props.addGuest}
-     updatePendingGuestValue={props.updatePendingGuestValue}
-     pendingGuest={props.pendingGuest}
-     />
+ )
+  }else{
+     return(    
+     <div className="App">
+      <Header />
+      <AddGuest
+      guest={props.guest}
+      addGuest={props.addGuest}
+      updatePendingGuestValue={props.updatePendingGuestValue}
+      pendingGuest={props.pendingGuest}
+      />
  
      <div className='filter-checkbox-container'>
        <label className='filter-guests-label'>Hide all unconfirmed guest
