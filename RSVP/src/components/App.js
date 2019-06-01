@@ -91,7 +91,9 @@ toggleFilterUnconfirmedGuest=()=>{
 }
 
   render(){
+
     return(
+      
     <MainContent 
       guest={this.state.guest}
       addGuest={this.addGuest}
@@ -104,7 +106,9 @@ toggleFilterUnconfirmedGuest=()=>{
       filterUnconfirmedGuest={this.state.filterUnconfirmedGuest}
       toggleFilterUnconfirmedGuest={this.toggleFilterUnconfirmedGuest}
     />
-    )}
+
+    )
+  }
 }
 
 export default App;

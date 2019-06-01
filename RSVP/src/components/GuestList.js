@@ -9,7 +9,8 @@ const GuestList =(props)=>
       hiding all non confirmed guest */}
         <ul>
             {props.guest.filter( guest => !props.filterUnconfirmedGuest || guest.isConfirmed)
-            .map((guest, index) =>   <Guest 
+            .map((guest, index) =>   
+                            <Guest 
                             key={index}
                             name={guest.name}
                             toggleGuestConfirmed={()=> props.toggleGuestConfirmed(guest.id)}
@@ -18,7 +19,7 @@ const GuestList =(props)=>
                             isEditing={guest.isEditing}
                             editGuest={name=> props.editGuest(name, guest.id)}
                             removeGuest={()=> props.removeGuest(guest.id)}
-                                />)}
+                            />)}
        </ul>
     </div>
 

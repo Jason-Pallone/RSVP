@@ -1,6 +1,7 @@
 import React from 'react';
 
 const GuestName =(props)=>{
+    
     if(props.isEditing){
         return(
         <input type='text' className='edit-guest-input'
