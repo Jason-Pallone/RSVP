@@ -6,7 +6,7 @@ You can add a guest, edit the guest, remove the guest and confirm them. There is
 
 If you are interested in viewing this site live, visit jasonpallone-rsvp.com
 
-If you are interested in viewing my portfolio site go to: jasonpallone.com
+If you are interested in viewing my portfolio site, visit jasonpallone.com
 
 Thanks for checking out my code!
 
