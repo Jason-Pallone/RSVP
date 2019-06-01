@@ -182,6 +182,74 @@ li{
   padding-right: 8%;
 }
 
+
+
+/*
+================================
+        4k XL
+================================
+*/
+
+@media(min-width:2550px){
+  .add-guest-container{
+    margin-left: 520px
+  }
+
+  li{
+    height: 175px
+  }
+
+  .edit-button,.remove-button{
+    margin-top: 30px
+  }
+
+  .guest-checkbox-container{
+    margin-top: 30px
+  }
+
+  .edit-guest-input{
+    width: 60%;
+    height:10%;
+    border-radius: 9px;
+  }
+}
+
+
+/*
+=======================================
+              TABLET
+========================================
+*/
+@media(max-width:768px){
+  .add-guest-container{
+    margin-left: -300px;
+  }
+
+  .edit-guest-input{
+    width:75%;
+  }
+
+  .guest-checkbox-container{
+    font-size:1rem;
+  }
+
+  li{
+    width:25%;
+  }
+
+  .remove-button{
+    margin-left: 10px;
+  }
+
+}
+
+
+/*
+=========================================
+                MOBILE
+=========================================
+*/
+
 @media(max-width:479px){
   .invite-guest-input{
     margin:0;
