@@ -1,8 +1,8 @@
 import React from 'react';
 
 
-const InviteGuest =(props)=>{
-    return(
+const InviteGuest =(props)=>
+       
         <div className='add-guest-container'>
             <form onSubmit={props.addGuest}>
                 <input type='text' className='invite-guest-input' placeholder='Invite someone!'
@@ -10,9 +10,10 @@ const InviteGuest =(props)=>{
                 />
                 <button className='add-guest-button' type='submit'>Submit</button>
             </form>
+
         </div>
-    )
-}
+      
+
 
 
 export default InviteGuest
