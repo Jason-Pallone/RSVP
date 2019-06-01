@@ -66,14 +66,15 @@ li{
   border-color: grey;
   box-shadow: 10px 10px 10px black;
   width: 20%;
-  height: 126px;
+  height: 50%;
   text-align: center;
   list-style: none;
   background: blue;
   color: white;
   float: left;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-left: 2rem;
+  padding-bottom: 10px;
 }
 
 
@@ -81,9 +82,9 @@ li{
 
 
 /*
-========================
-      Class selectors
-========================
+==============================
+      Add guest section
+=============================
 */
 
 
@@ -93,11 +94,6 @@ li{
   margin-right: 200px;
   margin-left: 30px;
 }
-/*
-=======================================
-      AddGuest input element
-======================================
-*/
 
 
 .invite-guest-input {
@@ -111,6 +107,7 @@ li{
   width: 25%;
   height: 30px;
   font-size: 20px;
+  margin-left: 495px;
 }
 
 .invite-guest-input:focus{
@@ -132,7 +129,8 @@ li{
 
 .filter-checkbox-container{
   font-family: 'quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-top: 25px;
+  margin-top: 100px;
+  margin-left: 30px;
   font-size: 1.2rem
 }
 
@@ -153,7 +151,7 @@ li{
    color: white;
    font-size: 1rem;
    font-weight:bolder;
-   padding:10px 25px;
+   padding:9px 25px;
    text-decoration:none;
    text-shadow:0px 1px 0px #3d768a;
    border-radius: 10px; 
@@ -175,7 +173,14 @@ li{
   padding:5px
 }
 
+.remove-button{
+  margin-left: 40px
+}
 
+.edit-button{
+  padding-left: 8%;
+  padding-right: 8%;
+}
 
 @media(max-width:479px){
   .invite-guest-input{
@@ -184,6 +189,25 @@ li{
     margin-left:80px;
     width:100%
   }
+
+  /* 
+  =========================
+        guest filter
+  =========================
+  */
+  .filter-checkbox-container{
+    margin-top: 25px;
+    margin-left: 5px;
+  }
+
+  /*-----------------------------------------*/
+
+
+  /*
+  ========================
+      Guest li section
+  ========================
+  */
   .guest-checkbox-container{
     margin-top: 15px;
     font-size: 1.2rem
@@ -210,7 +234,14 @@ li{
     padding-bottom: 3%;
   }
 
- 
+ /*----------------------------------------*/
+
+ /*
+=========================
+      guest li buttons
+=========================
+*/
+
  .edit-button, 
  .remove-button{
   margin-top: 15px
@@ -219,6 +250,10 @@ li{
   .edit-button{
     padding-left: 14%;
     padding-right: 14%;
+  }
+
+  .remove-button{
+    margin-left: 0;
   }
 
   .edit-guest-input{
