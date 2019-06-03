@@ -369,3 +369,25 @@ li{
     margin-left: 86px;
   }
 }
+
+
+@media(min-width:320px) and (max-width:399px){
+  .invite-guest-input{
+    width:200%;
+    margin-left: 60%
+  }
+
+  .add-guest-button{
+    margin-left: 82%
+  }
+
+  li{
+    width:40%;
+    margin-left: -12%;
+    margin-right: 21%
+  }
+
+  .pending-guest-li{
+    margin-left: 5%
+  }
+}
