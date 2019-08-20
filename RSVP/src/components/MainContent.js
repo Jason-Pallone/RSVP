@@ -5,10 +5,10 @@ import GuestList from './GuestList';
 import PendingGuestLi from './PendingGuestLi';
 
 const MainContent=(props)=>{
-    {/* 
+    /* 
     checks to see if the first li has been created, if not created shows the intro message and doesn't 
     dispaly the filter checkbox, else if first li is created, hides intro message and shows filter checkbox
-     */}
+     */
 
      const guests = props.guest
 
