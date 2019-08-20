@@ -1,393 +1,265 @@
-body{
-  font-family: 'quicksand', Georgia, 'Times New Roman', Times, serif
-}
-
-@font-face{
-  font-family: 'quicksand';
-  src: url(./fonts/quicksand/Quicksand-Regular.otf) format('opentype');
-}
-
-h1 {
-  font-family: 'quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 100px;
-  text-align: center;
-  color: white
-}
-
-
-/*
-============================
-        HEADER
-==========================
-*/
-
-.header-div{
-  background:radial-gradient(circle at top right, red, blue, red);
-  padding:2%;
-  padding-bottom: 7%;
-  border-radius: 10px;
-  box-shadow: 3px 3px 10px 1px inset white,
-              -3px -3px 10px 1px inset white
-}
-
-/*
-===============================
-      INTRO MESSAGE
-==============================
-*/
-
-.intro-message{
-  font-family: 'quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1rem;
-  margin-top: 20px;
-  background: blue;
-  box-shadow: 3px 3px 10px 1px inset white,
-              -3px -3px 10px 1px inset white;
-  color:white;
-  border-radius: 10px;
-  padding:35px;
-  overflow-wrap: break-word;
-}
-
-
-/*
-==============================
-        LI ELEMENTS
-==============================
-*/
-
-
-li{
-  font-family: 'quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 30px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  border-color: grey;
-  box-shadow: 10px 10px 10px black;
-  width: 20%;
-  height: 50%;
-  text-align: center;
-  list-style: none;
-  background: blue;
-  color: white;
-  float: left;
-  margin-top: 20px;
-  margin-left: 2rem;
-  padding-bottom: 10px;
-}
-
-
-
-
-
-/*
-==============================
-      Add guest section
-=============================
-*/
-
-
-.add-guest-container{
-  border-radius: 10px;
-  margin-top: -120px;
-  margin-right: 200px;
-  margin-left: 30px;
-}
-
-
-.invite-guest-input {
-  font-family: 'quicksand';
-  background-color: white;
-  position: relative;
-  border-style: solid;
-  border-width: .5px;
-  border-radius: 5px;
-  border-color: white;
-  width: 25%;
-  height: 30px;
-  font-size: 20px;
-  margin-left: 495px;
-}
-
-.invite-guest-input:focus{
-  box-shadow: 1px 1px 5px 1px inset blue
-}
-
-
-
- /*--------------------------------------------------------*/
-
-/*
-=======================================
-      checkboxes
-===================================
-*/
-.filter-guests-checkbox{
-  margin-left: 15px
-}
-
-.filter-checkbox-container{
-  font-family: 'quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-top: 100px;
-  margin-left: 30px;
-  font-size: 1.2rem
-}
-
-
-/*-------------------------------------------------------------------------*/
-/*
-=========================================
-        Buttons 
-=========================================
-*/
-
-.add-guest-button{
-  font-family: 'quicksand';
-   letter-spacing: 1px;
-   background-color: rgb(0, 102, 255);
-   opacity: .8;
-   cursor:pointer;
-   color: white;
-   font-size: 1rem;
-   font-weight:bolder;
-   padding:9px 25px;
-   text-decoration:none;
-   text-shadow:0px 1px 0px #3d768a;
-   border-radius: 10px; 
- }
-
-
-.edit-button,
-.remove-button{
-  font-family: 'quicksand';
-  letter-spacing: 1px;
-  background-color: white;
-  opacity: .9;
-  cursor:pointer;
-  color: black;
-  font-size: 1rem;
-  font-weight:bold;
-  text-decoration:none;
-  border-radius: 10px;
-  padding:5px
-}
-
-.remove-button{
-  margin-left: 40px
-}
-
-.edit-button{
-  padding-left: 8%;
-  padding-right: 8%;
-}
-
-
-
-/*
-================================
-        4k XL
-================================
-*/
-
-@media(min-width:2550px){
-  .add-guest-container{
-    margin-left: 520px
+body, html{
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)),
+    url(./photo/artsy-vibes-0FCHGRqHAjk-unsplash.jpg) no-repeat center;
+    background-size: cover;
   }
 
-  li{
-    height: 175px
+  h1 {
+    font-size: 100px;
+    margin-top:0%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white
   }
-
-  .edit-button,.remove-button{
-    margin-top: 30px
-  }
-
-  .guest-checkbox-container{
-    margin-top: 30px
-  }
-
-  .edit-guest-input{
-    width: 60%;
-    height:10%;
-    border-radius: 9px;
-  }
-}
-
-
-/*
-==============================
-          LAPTOP
-==============================
-*/
-         
-@media(min-width:1024px) and (max-width:1280px){
- form{
-   margin-left: 180px
- }
-
- .invite-guest-input{
-   width:27%
-  }
-}
-
-/*
-=======================================
-              TABLET
-========================================
-*/
-
-@media(min-width:768px) and (max-width:1024px){
-  .add-guest-container{
-    margin-left: -300px;
-  }
-
-  .edit-guest-input{
-    width:75%;
-  }
-
-  .guest-checkbox-container{
-    font-size:1rem;
-  }
-
-  li{
-    width:25%;
-  }
-
-  .remove-button{
-    margin-left: 10px;
-  }
-
-}
-
-
-/*
-=========================================
-                MOBILE
-=========================================
-*/
-
-@media(max-width:480px){
-  .invite-guest-input{
-    margin:0;
-    margin-top:20px;
-    margin-left:80px;
-    width:100%
-  }
-
-
-
-  .add-guest-button{
-    margin-left:110px;
-    margin-right: -100px;
-    margin-top:10px;
-  }
-
-  /* 
-  =========================
-        guest filter
-  =========================
+  
+  /*
+  ===============================
+        INTRO MESSAGE
+  ==============================
   */
-  .filter-checkbox-container{
-    margin-top: 25px;
-    margin-left: 5px;
+  
+  .intro-message{
+    font-size: 1rem;
+    margin-top: 20px;
+    color:white;
+    text-align: center;
+    padding: 0 5%;
+    letter-spacing: 1px;
   }
+  
+  
+  /*
+  ==============================
+          LI ELEMENTS
+  ==============================
+  */
+  
+  
+  li{
+    font-size: 30px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: white;
+    box-shadow: 10px 10px 10px black;
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    list-style: none;
+    background: transparent;
+    color: white;
+    float: left;
+    margin: 1% 0 0 1%;
+    padding-bottom: 10px;
+  }
+  
+  
+  
+  
+  
+  /*
+  ==============================
+        Add guest section
+  =============================
+  */
 
-  /*-----------------------------------------*/
+  
+  .invite-guest-input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin:auto;
+    text-align: center;
+    border-radius: 5px;
+    border-color: white;
+    width: 25%;
+    height: 30px;
+    font-size: 20px;
+  }
+  
+  /*
+  =======================================
+        checkboxes
+  ===================================
+  */
+  .filter-guests-checkbox{
+    margin-left: 15px
+  }
+  
+  .filter-checkbox-container{
+    margin-top: 100px;
+    margin:2% auto auto 15%;
+    font-size: 1.2rem;
+    color: white;
 
+  }
+  
+  
+  /*-------------------------------------------------------------------------*/
+  /*
+  =========================================
+          Buttons 
+  =========================================
+  */
+  
+  .add-guest-button{
+     letter-spacing: 1px;
+     background-color: transparent;
+     margin: 1% auto auto auto;
+     display: block;
+     cursor:pointer;
+     color: white;
+     font-size: 1rem;
+     padding:9px 25px;
+     border-width: 1px;
+     border-radius: 10px; 
+     border-style: solid;
+   }
+  
+  
+  .edit-button,
+  .remove-button{
+    letter-spacing: 1px;
+    background-color: transparent;
+    cursor:pointer;
+    color: white;
+    font-size: 1rem;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    padding:5px;
+  }
+  
+  .remove-button{
+    margin-left: 5%;
+  }
+  
+  .edit-button{
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  
+  
+  /*
+  ===========================
+           MEDIAS
+  ===========================
+  */
 
   /*
-  ========================
-      Guest li section
-  ========================
+  ====================================
+          TABLETs and small PC
+  ====================================
   */
-  .guest-checkbox-container{
-    margin-top: 15px;
-    font-size: 1.2rem
+
+  @media(min-width:768px) and (max-width:1024px){
+    
+  
+    .edit-guest-input{
+      width:75%;
+    }
+  
+    .guest-checkbox-container{
+      font-size:1rem;
+    }
+  
+    li{
+      width:40%;
+    }
+  
+    .remove-button{
+      margin-left: 10px;
+    }
+  
   }
 
-  .pending-guest-li{
-    margin-top: 20px;
-    float:left;
+ 
+  
+  /*
+  ===================================================
+                  MOBILE and Small Tablet
+  ===================================================
+  */
+  
+  @media(max-width:767px){
+    .invite-guest-input{
+     width:75%
+    }
+  
+   .add-guest-button{
+     margin-top: 2%;
+   }
+  
+    /* 
+    =========================
+          guest filter
+    =========================
+    */
+
+    .filter-checkbox-container{
+      margin-top: 4%;
+    }
+
+    /*
+    ========================
+        Guest li section
+    ========================
+    */
+    .guest-checkbox-container{
+      margin-top: 15px;
+      font-size: 1.2rem
+    }
+  
+    .pending-guest-li{
+      margin-top: 5%;
+      float:left;
+    }
+  
+    li{
+      font-size: 1.5rem;
+      margin: 3% 0 0 3%;
+      width:40%;
+      height:100%;
+      padding-bottom: 3%;
+    }
+  
+  
+   /*
+  =========================
+        guest li buttons
+  =========================
+  */
+  
+   .edit-button, 
+   .remove-button{
+    margin-top: 5%;
+   }
+  
+    .edit-button{
+      padding-left: 14%;
+      padding-right: 14%;
+    }
+  
+    .remove-button{
+      margin-left: 0;
+    }
+  
+    .edit-guest-input{
+      width: 80%;
+      border-radius: 3px;
+    }
   }
 
-  li{
-    font-family: 'quicksand', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.5rem;
-    margin-top:20px;
-    margin-left: 0px;
-    margin-right: 25px;
-    width:40%;
-    height:100%;
-    padding-bottom: 3%;
+  @media(min-width: 459px) and (max-width: 480px){
+    .remove-button{
+      margin-left:6%;
+      margin-right: 6%;
+    }
   }
-
- /*----------------------------------------*/
-
- /*
-=========================
-      guest li buttons
-=========================
-*/
-
- .edit-button, 
- .remove-button{
-  margin-top: 15px
- }
-
-  .edit-button{
-    padding-left: 14%;
-    padding-right: 14%;
-  }
-
-  .remove-button{
-    margin-left: 0;
-  }
-
-  .edit-guest-input{
-    width: 80%;
-    border-radius: 3px;
-    font-family: 'quicksand'
-  }
-}
-
-
-
-/*
-==========================
-      mobile small
-==========================
-*/
-
-@media(max-width:400px){
-  .invite-guest-input{
-    width:100%;
-    font-size: 14px;
-  }
-
-  .add-guest-button{
-    margin-left: 86px;
-  }
-}
-
-
-@media(min-width:320px) and (max-width:399px){
-  .invite-guest-input{
-    width:200%;
-    margin-left: 60%
-  }
-
-  .add-guest-button{
-    margin-left: 82%
-  }
-
-  li{
-    width:40%;
-    margin-left: -12%;
-    margin-right: 21%
-  }
-
-  .pending-guest-li{
-    margin-left: 5%
-  }
-}

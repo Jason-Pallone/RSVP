@@ -28,7 +28,7 @@ const MainContent=(props)=>{
 
               <p className='intro-message'>
               Invite some friends and family! Confirm your guests,
-              change their names if needed, remove the guest or filter through your guest who
+              edit, remove or filter through your guest who
               have/have not confirmed. Get started above!
               </p>
 

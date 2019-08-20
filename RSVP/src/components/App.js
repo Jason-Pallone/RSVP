@@ -93,6 +93,7 @@ toggleFilterUnconfirmedGuest=()=>{
   render(){
 
     return(
+      <div className='apps'>
       
     <MainContent 
       guest={this.state.guest}
@@ -106,6 +107,7 @@ toggleFilterUnconfirmedGuest=()=>{
       filterUnconfirmedGuest={this.state.filterUnconfirmedGuest}
       toggleFilterUnconfirmedGuest={this.toggleFilterUnconfirmedGuest}
     />
+    </div>
 
     )
   }
