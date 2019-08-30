@@ -1,3 +1,6 @@
+This was my first React project. This app was created before I was familiar with a mobile first CSS approach. 
+All projects created after this, use a mobile first CSS approach.
+
 ![RSVP site gif](/RSVP/public/rsvp-gif.gif)
 
 This is an RSVP site created with React and CSS.
