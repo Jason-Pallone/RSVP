@@ -44,10 +44,8 @@ body, html{
   
   li{
     font-size: 30px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px white;
     border-radius: 10px;
-    border-color: white;
     box-shadow: 10px 10px 10px black;
     width: 20%;
     height: 50%;
@@ -94,7 +92,6 @@ body, html{
   }
   
   .filter-checkbox-container{
-    margin-top: 100px;
     margin:2% auto auto 15%;
     font-size: 1.2rem;
     color: white;
@@ -111,16 +108,15 @@ body, html{
   
   .add-guest-button{
      letter-spacing: 1px;
-     background-color: transparent;
      margin: 1% auto auto auto;
+     background: transparent;
      display: block;
      cursor:pointer;
      color: white;
      font-size: 1rem;
-     padding:9px 25px;
-     border-width: 1px;
+     padding: 9px 25px;
+     border: solid 1px;
      border-radius: 10px; 
-     border-style: solid;
    }
   
   
@@ -132,8 +128,7 @@ body, html{
     color: white;
     font-size: 1rem;
     border-radius: 10px;
-    border-style: solid;
-    border-width: 1px;
+    border: solid 1px white;
     padding:5px;
   }
   
