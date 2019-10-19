@@ -1,15 +1,11 @@
-This was my first React project. This app was created before I was familiar with a mobile first CSS approach. 
-All projects created after this, use a mobile first CSS approach.
+This was one of my first React apps. This is an RSVP site created with React and hand coded CSS. You can add a guest, edit the guest, remove the guest and confirm them. There is a phantom li element that shows the input value while you type, it is removed on submit. There is an option to filter the guests to view only the guests that have confirmed they will attend.
 
-![RSVP site gif](/RSVP/public/rsvp-gif.gif)
+![RSVP site gif](/RSVP/public/RSVP-gif.gif)
+ 
 
-This is an RSVP site created with React and CSS.
+[View the live demo](https://jasonpallone-rsvp.com)
 
-You can add a guest, edit the guest, remove the guest and confirm them. There is a phantom li element that shows the input value while you type, it is removed on submit. There is an option to filter the guests to view only the guests that have confirmed they will attend. The intro message disappears on submit of the first li, if you remove all li, the intro message returns. 
-
-If you are interested in viewing this site live, visit https://jasonpallone-rsvp.com
-
-If you are interested in viewing my portfolio site, visit https://jasonpallone.com
+If you are interested in viewing my portfolio site [Click here](https://jasonpallone.com)
 
 Thanks for checking out my code!
 
