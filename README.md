@@ -5,7 +5,7 @@ This was one of my first React apps. This is an RSVP site created with React and
 
 [View the live demo](https://jasonpallone-rsvp.com)
 
-If you are interested in viewing my portfolio site [Click here](https://jasonpallone.com)
+If you are interested in viewing my portfolio site, [Click here](https://jasonpallone.com)
 
 Thanks for checking out my code!
 
